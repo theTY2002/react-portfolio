@@ -5,11 +5,11 @@ import { useEffect, useState } from "react";
 
 export const StarBackground = () => {
     const [stars, setStars] = useState([]);
-    const [meteors, setMeteors] = useState([]);
+    // const [meteors, setMeteors] = useState([]);
 
     useEffect(() => {
         generateStars();
-        generateMeteors();
+        // generateMeteors();
 
         const handleResize = () =>
         {
@@ -43,26 +43,26 @@ export const StarBackground = () => {
         setStars(newStars);
     };
 
-    const generateMeteors = () => {
-        const meteorNum = 4;
-        const newMeteors = [];
+    // const generateMeteors = () => {
+    //     const meteorNum = 4;
+    //     const newMeteors = [];
 
-        for (let i = 0; i < meteorNum; i++)
-        {
-            newMeteors.push
-            ({
-                id: i,
-                size: Math.random() * 2 + 1,
-                x: Math.random() * 100,
-                y: Math.random() * 20,
-                animationDelay: Math.random() * 15,
-                animationDuration: Math.random() * 3 + 3,
-            })
+    //     for (let i = 0; i < meteorNum; i++)
+    //     {
+    //         newMeteors.push
+    //         ({
+    //             id: i,
+    //             size: Math.random() * 2 + 1,
+    //             x: Math.random() * 100,
+    //             y: Math.random() * 20,
+    //             animationDelay: Math.random() * 15,
+    //             animationDuration: Math.random() * 3 + 3,
+    //         })
 
             
-        }
-        setMeteors(newMeteors);
-    };
+    //     }
+    //     setMeteors(newMeteors);
+    // };
 
     return <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
         {stars.map((star) => (
@@ -76,7 +76,7 @@ export const StarBackground = () => {
             }}/>
         ))}
 
-        {meteors.map((meteor) => (
+        {/* {meteors.map((meteor) => (
             <div key={meteor.id} className="meteor animate-meteor" style={{
                 width: meteor.size * 50 + "px",
                 height: meteor.size * 1.5 + "px",
@@ -85,6 +85,6 @@ export const StarBackground = () => {
                 animationDelay: meteor.animationDelay,
                 animationDuration: meteor.animationDuration + "s",
             }}/>
-        ))}
+        ))} */}
     </div>
 }
