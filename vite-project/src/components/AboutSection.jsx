@@ -1,4 +1,4 @@
-import { Briefcase, Code, User } from "lucide-react"
+import { Briefcase, Code, Database, Download, Server, User, Workflow } from "lucide-react"
 
 export const AboutSection = () =>
 {
@@ -10,9 +10,9 @@ export const AboutSection = () =>
 
             <div className="grid grid-cols-2 md:grid-cols-2 gap-12 items-center">
                 <div className="space-y-6">
-                    <h3 className="text-2xl font-semibold">*DEVELOPER TITLE*</h3>
+                    <h3 className="text-2xl font-semibold">Backend Software Developer & Final Year MS Computer Science Student at USC</h3>
                     <p className="text-muted-foreground">
-                        *Brief intro*
+                        Backend‑leaning developer and computer science student with a solid grounding in data structures, algorithms, and software design. Proficient in multiple programming languages and comfortable working across the stack when needed. Enjoys tackling difficult problems, delivering reliable solutions on time, and collaborating closely with others. Currently looking for opportunities that will challenge me intellectually and help me deepen my skills.
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
@@ -20,8 +20,8 @@ export const AboutSection = () =>
                             Contact Me
                         </a>
 
-                        <a href="Resume.pdf" download="Resume.pdf" className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300">
-                            Download Resume
+                        <a href="Resume.pdf" download="Resume.pdf" className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300 flex items-center gap-2">
+                            <Download /> Download Resume
                         </a>
                     </div>
                 </div>
@@ -30,12 +30,12 @@ export const AboutSection = () =>
                     <div className="gradient-border p-6 card-hover">
                         <div className="flex items-start gap-4">
                             <div className="p-3 rounded-full bg-primary/10">
-                                <Code className="h-6 w-6 text-primary" />
+                                <Server className="h-6 w-6 text-primary" />
                             </div>
                             <div className="text-left">
-                                <h4 className="font-semibold text-lg"> e.g. Web Development</h4>
+                                <h4 className="font-semibold text-lg"> Backend Development</h4>
                                 <p className="text-muted-foreground">
-                                    Creating blah blah blah
+                                    Building and maintaining server-side applications, APIs, and services with a focus on reliability, scalability, and clean architecture.
                                 </p>
                             </div>
                         </div>
@@ -43,12 +43,12 @@ export const AboutSection = () =>
                     <div className="gradient-border p-6 card-hover">
                         <div className="flex items-start gap-4">
                             <div className="p-3 rounded-full bg-primary/10">
-                                <User className="h-6 w-6 text-primary" />
+                                <Workflow className="h-6 w-6 text-primary" />
                             </div>
                             <div className="text-left">
-                                <h4 className="font-semibold text-lg"> e.g. Web Development</h4>
+                                <h4 className="font-semibold text-lg"> AI & Automation</h4>
                                 <p className="text-muted-foreground">
-                                    Creating blah blah blah
+                                    Building intelligent workflows, scripts, and automation tools to streamline processes and boost efficiency.
                                 </p>
                             </div>
                         </div>
@@ -56,12 +56,12 @@ export const AboutSection = () =>
                     <div className="gradient-border p-6 card-hover">
                         <div className="flex items-start gap-4">
                             <div className="p-3 rounded-full bg-primary/10">
-                                <Briefcase className="h-6 w-6 text-primary" />
+                                <Database className="h-6 w-6 text-primary" />
                             </div>
                             <div className="text-left">
-                                <h4 className="font-semibold text-lg"> e.g. Web Development</h4>
+                                <h4 className="font-semibold text-lg"> Data Processing</h4>
                                 <p className="text-muted-foreground">
-                                    Creating blah blah blah
+                                    Designing data pipelines, optimizing queries, and transforming raw data into actionable insights.
                                 </p>
                             </div>
                         </div>

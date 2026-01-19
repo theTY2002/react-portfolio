@@ -16,8 +16,7 @@ export const HeroSection = () =>
                     </h1>
 
                     <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-delay-2">
-                        Put a short bio paragraph here
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla varius iaculis sagittis. Ut vel purus dignissim, venenatis orci in, vestibulum mi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla augue ipsum, porttitor sit amet ipsum ut, rutrum convallis orci. Vestibulum sed elit at justo fringilla fermentum non sit amet felis. In et vehicula velit, sit amet elementum erat. Duis et convallis lacus. In fringilla nec augue id interdum. Ut venenatis, ligula at commodo porta, elit lectus molestie eros, a facilisis eros lectus in augue. Duis facilisis, odio vel convallis luctus, arcu nibh tristique eros, ut iaculis justo augue et nisl. Duis porttitor sodales erat eu sodales. Vivamus vel rutrum mauris, ut dignissim turpis. Aenean eu magna in sem pretium bibendum sit amet et libero.
+                        I'm a University of Southern California student pursuing a Master's Degree in Computer Science, I am enthusiastic and motivated in exploring career opportunities in Software Engineering and Data Science. Proficient in multiple programming languages, with a strong understanding of data structures, algorithms, and software design.I strive for perfection and perform each task to the best of my ability.Able to solve difficult problems, deliver timely results, and can collaborate and communicate cohesively with other people.Looking for opportunities and experiences that would help me cultivate and further hone my skills and challenge me intellectually.
                     </p>
 
                     <div className="pt-4 opacity-0 animate-fade-in-delay-4">

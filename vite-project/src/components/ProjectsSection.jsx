@@ -5,10 +5,10 @@ const projects =
 [
     {
         id: 1,
-        title: "Project 1",
-        description: "Description 1",
-        image: "/projects/project1.png",
-        tags: ["PUT SKILLS HERE"],
+        title: "React Portfolio",
+        description: "This portfolio that you're looking at right now!",
+        img: "/projects/Test.png",
+        tags: ["JavaScript", "React", "TailwindCSS"],
         demoURL: "#",
         githubURL: "https://github.com/theTY2002/react-portfolio"
     },
@@ -16,7 +16,7 @@ const projects =
         id: 2,
         title: "Project 1",
         description: "Description 1",
-        image: "/projects/project1.png",
+        img: "/projects/project1.png",
         tags: ["PUT SKILLS HERE"],
         demoURL: "#",
         githubURL: "#"
@@ -25,7 +25,7 @@ const projects =
         id: 3,
         title: "Project 1",
         description: "Description 1",
-        image: "/projects/project1.png",
+        img: "/projects/project1.png",
         tags: ["PUT SKILLS HERE"],
         demoURL: "#",
         githubURL: "#"

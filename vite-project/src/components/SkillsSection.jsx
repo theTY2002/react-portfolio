@@ -3,11 +3,25 @@ import { cn } from "@lib/utils";
 
 const skills =
 [
-    {name: "HTML/CSS", level: 95, category: "frontend"}
-    // TODO: FILL IN Frontend/Backend/Tools
+    {name: "Python", level: 100, category: "languages"},
+    {name: "Java", level: 100, category: "languages"},
+    {name: "Swift", level: 66, category: "languages"},
+    {name: "C#", level: 66, category: "languages"},
+    {name: "C/C++", level: 33, category: "languages"},
+    {name: "JavaScript", level: 33, category: "languages"},
+
+    {name: "REST APIs", level: 66, category: "backend"},
+    {name: "PostgreSQL", level: 66, category: "backend"},
+    {name: "Docker", level: 33, category: "backend"},
+
+    {name: "Automation Scripts", level: 100, category: "aI/automation"},
+    {name: "Web Scraping", level: 100, category: "aI/automation"},
+    {name: "Agentic LLM Tools", level: 100, category: "aI/automation"},
+    {name: "n8n (Workflow automation)", level: 100, category: "aI/automation"},
+    {name: "LLM APIs", level: 66, category: "aI/automation"},
 ];
 
-const categories = ["all", "frontend", "backend", "tools"];
+const categories = ["all", "languages", "backend", "aI/automation"];
 
 export const SkillsSection = () =>
 {
@@ -50,9 +64,10 @@ export const SkillsSection = () =>
                                 style={{width: skill.level + "%"}}
                             />
                         </div>
-                        <div className="text-right mt-1">
+                        <div className="text-left mt-1">
                             <span className="text-sm text-muted-foreground">
-                                {skill.level}%
+                                {skill.level <= 33 ? "Beginner" : 
+                                skill.level <= 66 ? "Intermediate" : "Advanced"}
                             </span>
                         </div>
                     </div>
