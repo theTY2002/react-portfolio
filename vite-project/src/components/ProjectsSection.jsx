@@ -7,28 +7,31 @@ const projects =
         id: 1,
         title: "React Portfolio",
         description: "This portfolio that you're looking at right now!",
-        img: "/projects/Test.png",
+        img: "/projects/project1.png",
         tags: ["JavaScript", "React", "TailwindCSS"],
+        hasDemo: false,
         demoURL: "#",
         githubURL: "https://github.com/theTY2002/react-portfolio"
     },
     {
         id: 2,
-        title: "Project 1",
-        description: "Description 1",
-        img: "/projects/project1.png",
-        tags: ["PUT SKILLS HERE"],
-        demoURL: "#",
-        githubURL: "#"
+        title: "Minerunner",
+        description: "A Movement-based Puzzle game made in Unity, class final project",
+        img: "/projects/project2.png",
+        tags: ["Unity", "C#", "Group Work"],
+        hasDemo: true,
+        demoURL: "https://csci-526.github.io/main-minerunner/Minerunner/Builds/MineRunner%20Final%202/",
+        githubURL: "https://github.com/theTY2002/CSCI-526-minerunner"
     },
     {
         id: 3,
-        title: "Project 1",
-        description: "Description 1",
-        img: "/projects/project1.png",
-        tags: ["PUT SKILLS HERE"],
+        title: "Mahjong AI Agent",
+        description: "An artificial intelligence agent comprised of multiple neural networks to play a simulated game of Mahjong",
+        img: "/projects/project3.png",
+        tags: ["Python", "AI", "Machine Learning"],
+        hasDemo: false,
         demoURL: "#",
-        githubURL: "#"
+        githubURL: "https://github.com/theTY2002/COGS-188-Final-Project"
     },
 ]
 
@@ -63,9 +66,10 @@ export const ProjectsSection = () =>
                             <p className="text-muted-foreground text-sm mb-4">{project.description}</p>
                             <div className="flex justify-between items-center">
                                 <div className="flex space-x-3">
+                                    {project.hasDemo && (
                                     <a href={project.demoURL} target="_blank" className="text-foreground/80 hover:text-primary transition-colors duration-300">
                                         <ExternalLink size={20}/>
-                                    </a>
+                                    </a>)}
                                     <a href={project.githubURL} target="_blank" className="text-foreground/80 hover:text-primary transition-colors duration-300">
                                         <GithubIcon size={20}/>
                                     </a>

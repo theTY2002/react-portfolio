@@ -44,8 +44,8 @@ export const ContactSection = () => {
                                 </div>
                                 <div>
                                     <h4 className="font-medium">Email</h4>
-                                    <a href="mailto:example@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
-                                        example@gmail.com
+                                    <a href="mailto:trevoryi@usc.edu" className="text-muted-foreground hover:text-primary transition-colors">
+                                        trevoryi@usc.edu
                                     </a>
                                 </div>
                             </div>
@@ -56,8 +56,8 @@ export const ContactSection = () => {
                                 </div>
                                 <div>
                                     <h4 className="font-medium">Phone</h4>
-                                    <a href="tel:+11234567890" className="text-muted-foreground hover:text-primary transition-colors">
-                                        +1 (123) 456-7890
+                                    <a href="tel:+18583195463" className="text-muted-foreground hover:text-primary transition-colors">
+                                        +1 (858) 319-5463
                                     </a>
                                 </div>
                             </div>
@@ -69,20 +69,20 @@ export const ContactSection = () => {
                                 <div>
                                     <h4 className="font-medium">Location</h4>
                                     <a className="text-muted-foreground hover:text-primary transition-colors">
-                                        LOCATION HERE
+                                        Los Angeles
                                     </a>
                                 </div>
                             </div>
 
                             <div className="pt-8">
                                 <h4 className="font-medium mb-4">Connect With Me</h4>
-                                <div className="flex space-x-4 justify-center">
-                                    <a href="#" target="_blank">
+                                <div className="flex space-x-4 justify-center hover:text-primary transition-colors">
+                                    <a href="https://www.linkedin.com/in/jing-yin-trevor-yip/" target="_blank">
                                         <Linkedin />
                                     </a>
+                                    {/* <a><Linkedin /></a>
                                     <a><Linkedin /></a>
-                                    <a><Linkedin /></a>
-                                    <a><Linkedin /></a>
+                                    <a><Linkedin /></a> */}
                                 </div>
                             </div>
                         </div>
@@ -102,7 +102,7 @@ export const ContactSection = () => {
                                     name="name"
                                     required
                                     className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary"
-                                    placeholder="FirstName LastName"
+                                    placeholder="Firstname Lastname"
                                 />
                             </div>
 
@@ -114,7 +114,7 @@ export const ContactSection = () => {
                                     name="email"
                                     required
                                     className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary"
-                                    placeholder="Email..."
+                                    placeholder="Email"
                                 />
                             </div>
 
@@ -125,7 +125,7 @@ export const ContactSection = () => {
                                     name="message"
                                     required
                                     className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary resize-none"
-                                    placeholder="Hello..."
+                                    placeholder="Hello World"
                                 />
                             </div>
                             
