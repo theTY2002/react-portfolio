@@ -9,7 +9,7 @@ const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
 
 export default defineConfig(({ mode }) => ({
-  base: mode === 'production' ? '/theTY2002/react-portfolio/' : '/',
+  base: mode === 'production' ? '/react-portfolio/' : '/',
   plugins: [
     react(),
     tailwindcss()
