@@ -1,4 +1,5 @@
 import { ArrowRight, ExternalLink, GithubIcon } from "lucide-react";
+const BASE_URL = import.meta.env.BASE_URL;
 //TODO: Possibly replace github icon
 //Put images in public/projects
 const projects = 
@@ -7,7 +8,7 @@ const projects =
         id: 1,
         title: "React Portfolio",
         description: "This portfolio that you're looking at right now!",
-        img: "/projects/project1.png",
+        img: BASE_URL + "/projects/project1.png",
         tags: ["JavaScript", "React", "TailwindCSS"],
         hasDemo: false,
         demoURL: "#",
@@ -17,7 +18,7 @@ const projects =
         id: 2,
         title: "Minerunner",
         description: "A Movement-based Puzzle game made in Unity, class final project",
-        img: "/projects/project2.png",
+        img: BASE_URL + "/projects/project2.png",
         tags: ["Unity", "C#", "Group Work"],
         hasDemo: true,
         demoURL: "https://csci-526.github.io/main-minerunner/Minerunner/Builds/MineRunner%20Final%202/",
@@ -27,7 +28,7 @@ const projects =
         id: 3,
         title: "Mahjong AI Agent",
         description: "An artificial intelligence agent comprised of multiple neural networks to play a simulated game of Mahjong",
-        img: "/projects/project3.png",
+        img: BASE_URL + "/projects/project3.png",
         tags: ["Python", "AI", "Machine Learning"],
         hasDemo: false,
         demoURL: "#",
